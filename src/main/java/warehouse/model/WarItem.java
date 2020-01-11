@@ -1,4 +1,4 @@
-package akademia.model;
+package warehouse.model;
 
 
 import javax.persistence.Entity;

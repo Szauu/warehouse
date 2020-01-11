@@ -1,14 +1,12 @@
-package akademia.controller;
+package warehouse.controller;
 
 
-import akademia.model.WarItem;
-import akademia.model.dto.WarItemDto;
-import akademia.service.WarItemDtoService;
+import warehouse.model.dto.WarItemDto;
+import warehouse.service.WarItemDtoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin

@@ -1,8 +1,8 @@
-package akademia.service;
+package warehouse.service;
 
 
-import akademia.model.WarItem;
-import akademia.repository.WarItemRepository;
+import warehouse.model.WarItem;
+import warehouse.repository.WarItemRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,6 @@ public class WarItemService {
 
     String errorMessage = "not found";
     private WarItemRepository warItemRepository;
-
 
     public WarItemService(WarItemRepository warItemRepository) {
         this.warItemRepository = warItemRepository;

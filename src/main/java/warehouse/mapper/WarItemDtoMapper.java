@@ -1,8 +1,8 @@
-package akademia.mapper;
+package warehouse.mapper;
 
 
-import akademia.model.WarItem;
-import akademia.model.dto.WarItemDto;
+import warehouse.model.WarItem;
+import warehouse.model.dto.WarItemDto;
 import org.springframework.stereotype.Component;
 
 @Component

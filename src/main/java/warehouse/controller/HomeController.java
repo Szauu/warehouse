@@ -1,7 +1,7 @@
-package akademia.controller;
+package warehouse.controller;
 
-import akademia.model.WarItem;
-import akademia.service.WarItemService;
+import warehouse.model.WarItem;
+import warehouse.service.WarItemService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,7 +26,6 @@ public class HomeController {
         return "index";
     }
 
-
     @PostMapping("warItems/add")
     public String addWarItem(@ModelAttribute WarItem incomeWarItem) {
         WarItem warItem = new WarItem();
@@ -40,7 +39,6 @@ public class HomeController {
         return "redirect:/warItems@message:dodano obiekt " + operationResult;
     }
 
-
     @GetMapping("warItems/delete")
     public String deleteWarItem(@RequestParam long id) {
         warItemService.deleteWarItem(id);
@@ -51,7 +49,7 @@ public class HomeController {
     public String updateWarItem(@ModelAttribute WarItem incomeWarItem) {
         WarItem warItem = warItemService.getWarItemById(incomeWarItem.getId());
         if(warItem ==null){
-            return "nie można znaleźć obiektu! ";
+            return " no object to update! ";
         }
         warItem.setBrand(incomeWarItem.getBrand());
         warItem.setName(incomeWarItem.getName());

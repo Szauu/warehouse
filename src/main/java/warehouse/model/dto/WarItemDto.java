@@ -1,7 +1,4 @@
-package akademia.model.dto;
-
-import javafx.util.Builder;
-import org.springframework.boot.autoconfigure.info.ProjectInfoProperties;
+package warehouse.model.dto;
 
 public class WarItemDto {
 

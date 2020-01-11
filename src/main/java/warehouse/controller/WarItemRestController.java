@@ -1,8 +1,8 @@
-package akademia.controller;
+package warehouse.controller;
 
 
-import akademia.model.WarItem;
-import akademia.service.WarItemService;
+import warehouse.model.WarItem;
+import warehouse.service.WarItemService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

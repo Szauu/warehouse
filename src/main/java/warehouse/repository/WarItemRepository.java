@@ -1,7 +1,7 @@
-package akademia.repository;
+package warehouse.repository;
 
 
-import akademia.model.WarItem;
+import warehouse.model.WarItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

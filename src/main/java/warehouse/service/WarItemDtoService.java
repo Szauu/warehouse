@@ -1,10 +1,10 @@
-package akademia.service;
+package warehouse.service;
 
 
-import akademia.mapper.WarItemDtoMapper;
-import akademia.model.WarItem;
-import akademia.model.dto.WarItemDto;
-import akademia.repository.WarItemRepository;
+import warehouse.mapper.WarItemDtoMapper;
+import warehouse.model.WarItem;
+import warehouse.model.dto.WarItemDto;
+import warehouse.repository.WarItemRepository;
 import org.springframework.stereotype.Service;
 
 @Service
